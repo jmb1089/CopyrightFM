@@ -8,6 +8,9 @@ namespace CopyrightFM
 {
     class Person
     {
+        /// <summary>
+        /// Gets the first name
+        /// </summary>
         public string FirstName
         {
             get;
