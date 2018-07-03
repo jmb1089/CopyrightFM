@@ -12,7 +12,8 @@ namespace CopyrightFM
         public static string CNN(string name)
         {
 
-            return ConfigurationManager.ConnectionStrings[].ConnectionString;
+            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
+           
         }
     }
 }

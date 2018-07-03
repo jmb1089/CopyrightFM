@@ -12,9 +12,23 @@ namespace CopyrightFM
 {
     public partial class Form1 : Form
     {
+        List<Person> people = new List<Person>();
         public Form1()
         {
             InitializeComponent();
+
+            lbPeopleFound.DataSource = people;
+            lbPeopleFound.DisplayMember = "FullInfo";
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            DataAccess db = new DataAccess();
+            people = db.GetPeople(txtLastName.Text);
+
+            lbPeopleFound.DataSource = people;
+            lbPeopleFound.DisplayMember = "FullInfo";
+
         }
     }
 }

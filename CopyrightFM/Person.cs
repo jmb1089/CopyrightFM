@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CopyrightFM
 {
-    class Person
+    public class Person
     {
         /// <summary>
         /// Gets the first name
@@ -24,6 +24,14 @@ namespace CopyrightFM
         public int Age
         {
             get;
+        }
+        public string FullInfo
+        {
+
+            get
+            {
+                return $"{FirstName} {Lastname} Age: {Age}";
+            }
         }
     }
 }
