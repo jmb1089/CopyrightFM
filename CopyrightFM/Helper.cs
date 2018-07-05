@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace CopyrightFM
 {
@@ -13,7 +14,8 @@ namespace CopyrightFM
         {
 
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
-           
+            
         }
+        
     }
 }

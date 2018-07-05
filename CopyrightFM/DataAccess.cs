@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace CopyrightFM
 {
@@ -12,6 +13,8 @@ namespace CopyrightFM
     {
         public List<Person> GetPeople(string lastName)
         {
+           
+            
             
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CNN("CustomerApplicationDB")))
             {
