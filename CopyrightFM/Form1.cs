@@ -10,25 +10,24 @@ using System.Windows.Forms;
 
 namespace CopyrightFM
 {
-    public partial class Form1 : Form
+    public partial class frmLoad : Form
     {
-        List<Person> people = new List<Person>();
-        public Form1()
+        
+        public frmLoad()
         {
             InitializeComponent();
-
-            lbPeopleFound.DataSource = people;
-            lbPeopleFound.DisplayMember = "FullInfo";
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Loads the lookup form to seach for valid applicants
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private void btnLookup_Click(object sender, EventArgs e)
         {
-            DataAccess db = new DataAccess();
-            people = db.GetPeople(txtLastName.Text);
-
-            lbPeopleFound.DataSource = people;
-            lbPeopleFound.DisplayMember = "FullInfo";
-
+            frmLookup lookup = new frmLookup();
+            lookup.Show();
         }
     }
 }

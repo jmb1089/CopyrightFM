@@ -1,6 +1,6 @@
 ﻿namespace CopyrightFM
 {
-    partial class Form1
+    partial class frmLoad
     {
         /// <summary>
         /// Required designer variable.
@@ -28,68 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbPeopleFound = new System.Windows.Forms.ListBox();
-            this.txtLastName = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.lblLastname = new System.Windows.Forms.Label();
+            this.btnLookup = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnBrowse = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbPeopleFound
+            // btnLookup
             // 
-            this.lbPeopleFound.FormattingEnabled = true;
-            this.lbPeopleFound.Location = new System.Drawing.Point(40, 119);
-            this.lbPeopleFound.Name = "lbPeopleFound";
-            this.lbPeopleFound.Size = new System.Drawing.Size(120, 95);
-            this.lbPeopleFound.TabIndex = 0;
+            this.btnLookup.Location = new System.Drawing.Point(33, 48);
+            this.btnLookup.Name = "btnLookup";
+            this.btnLookup.Size = new System.Drawing.Size(116, 48);
+            this.btnLookup.TabIndex = 0;
+            this.btnLookup.Text = "Look Up";
+            this.btnLookup.UseVisualStyleBackColor = true;
+            this.btnLookup.Click += new System.EventHandler(this.btnLookup_Click);
             // 
-            // txtLastName
+            // btnAdd
             // 
-            this.txtLastName.Location = new System.Drawing.Point(89, 51);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(78, 20);
-            this.txtLastName.TabIndex = 1;
+            this.btnAdd.Location = new System.Drawing.Point(191, 48);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(116, 48);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // btnSearch
+            // btnBrowse
             // 
-            this.btnSearch.Location = new System.Drawing.Point(64, 77);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnBrowse.Location = new System.Drawing.Point(352, 48);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(116, 48);
+            this.btnBrowse.TabIndex = 2;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.UseVisualStyleBackColor = true;
             // 
-            // lblLastname
-            // 
-            this.lblLastname.AutoSize = true;
-            this.lblLastname.Location = new System.Drawing.Point(25, 57);
-            this.lblLastname.Name = "lblLastname";
-            this.lblLastname.Size = new System.Drawing.Size(58, 13);
-            this.lblLastname.TabIndex = 3;
-            this.lblLastname.Text = "Last Name";
-            // 
-            // Form1
+            // frmLoad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.lblLastname);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.lbPeopleFound);
-            this.Name = "Form1";
-            this.Text = "frm";
+            this.ClientSize = new System.Drawing.Size(506, 158);
+            this.Controls.Add(this.btnBrowse);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnLookup);
+            this.Name = "frmLoad";
+            this.Text = "Copyright File Management";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox lbPeopleFound;
-        private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Label lblLastname;
+        private System.Windows.Forms.Button btnLookup;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnBrowse;
     }
 }
 

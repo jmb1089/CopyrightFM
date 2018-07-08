@@ -19,6 +19,7 @@ namespace CopyrightFM
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CNN("CustomerApplicationDB")))
             {
                var found =  connection.Query<Person>($"select * from Customer where LastName = '{lastName}'").ToList();
+                
                 return found;
             }
             
