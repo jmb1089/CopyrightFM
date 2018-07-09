@@ -32,7 +32,8 @@
             this.clmLast = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmFirst = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmAge = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmOrderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lvFound
@@ -42,13 +43,14 @@
             this.clmLast,
             this.clmFirst,
             this.clmAge,
-            this.columnHeader4});
-            this.lvFound.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clmOrderID,
+            this.clmDate});
+            this.lvFound.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvFound.FullRowSelect = true;
             this.lvFound.GridLines = true;
             this.lvFound.Location = new System.Drawing.Point(12, 101);
             this.lvFound.Name = "lvFound";
-            this.lvFound.Size = new System.Drawing.Size(550, 375);
+            this.lvFound.Size = new System.Drawing.Size(495, 375);
             this.lvFound.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lvFound.TabIndex = 1;
             this.lvFound.UseCompatibleStateImageBehavior = false;
@@ -69,15 +71,21 @@
             this.clmAge.Text = "Age";
             this.clmAge.Width = 42;
             // 
-            // columnHeader4
+            // clmOrderID
             // 
-            this.columnHeader4.Width = 150;
+            this.clmOrderID.Text = "Order ID";
+            this.clmOrderID.Width = 150;
+            // 
+            // clmDate
+            // 
+            this.clmDate.Text = "Date";
+            this.clmDate.Width = 82;
             // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 488);
+            this.ClientSize = new System.Drawing.Size(534, 488);
             this.Controls.Add(this.lvFound);
             this.Name = "frmBrowse";
             this.Text = "frmBrowse";
@@ -91,6 +99,7 @@
         private System.Windows.Forms.ColumnHeader clmLast;
         private System.Windows.Forms.ColumnHeader clmFirst;
         private System.Windows.Forms.ColumnHeader clmAge;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader clmOrderID;
+        private System.Windows.Forms.ColumnHeader clmDate;
     }
 }
