@@ -29,5 +29,16 @@ namespace CopyrightFM
             frmLookup lookup = new frmLookup();
             lookup.Show();
         }
+
+        /// <summary>
+        /// loads browse form 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            frmBrowse browse = new frmBrowse();
+            browse.Show();
+        }
     }
 }
