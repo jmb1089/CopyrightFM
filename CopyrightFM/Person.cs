@@ -21,8 +21,25 @@ namespace CopyrightFM
             get;
         }
         
-        public int Age
+        public int OrderID
         {
+            get;
+        }
+
+        public int Date
+        {
+            get;
+        }
+
+        public string Initial
+        {
+
+            get;
+        }
+
+        public string Release
+        {
+
             get;
         }
         public string FullInfo
@@ -30,7 +47,7 @@ namespace CopyrightFM
 
             get
             {
-                return $"{FirstName} {Lastname} Age: {Age}";
+                return $"{FirstName} {Lastname} OrderID: {OrderID}";
             }
         }
         

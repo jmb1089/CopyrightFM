@@ -34,7 +34,10 @@ namespace CopyrightFM
             {
                 ListViewItem item = new ListViewItem(p.Lastname);
                 item.SubItems.Add(p.FirstName);
-                item.SubItems.Add(p.Age.ToString());
+                item.SubItems.Add(p.OrderID.ToString());
+                item.SubItems.Add(p.Date.ToString());
+                item.SubItems.Add(p.Initial);
+                item.SubItems.Add(p.Release);
                 lvFound.Items.Add(item);
             }
         }

@@ -31,9 +31,10 @@
             this.lvFound = new System.Windows.Forms.ListView();
             this.clmLast = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmFirst = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmAge = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmOrderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmAssociate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmRelease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lvFound
@@ -42,15 +43,16 @@
             this.lvFound.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmLast,
             this.clmFirst,
-            this.clmAge,
             this.clmOrderID,
-            this.clmDate});
+            this.clmDate,
+            this.clmAssociate,
+            this.clmRelease});
             this.lvFound.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvFound.FullRowSelect = true;
             this.lvFound.GridLines = true;
-            this.lvFound.Location = new System.Drawing.Point(12, 101);
+            this.lvFound.Location = new System.Drawing.Point(12, 28);
             this.lvFound.Name = "lvFound";
-            this.lvFound.Size = new System.Drawing.Size(495, 375);
+            this.lvFound.Size = new System.Drawing.Size(696, 375);
             this.lvFound.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lvFound.TabIndex = 1;
             this.lvFound.UseCompatibleStateImageBehavior = false;
@@ -66,11 +68,6 @@
             this.clmFirst.Text = "First Name";
             this.clmFirst.Width = 102;
             // 
-            // clmAge
-            // 
-            this.clmAge.Text = "Age";
-            this.clmAge.Width = 42;
-            // 
             // clmOrderID
             // 
             this.clmOrderID.Text = "Order ID";
@@ -81,11 +78,21 @@
             this.clmDate.Text = "Date";
             this.clmDate.Width = 82;
             // 
+            // clmAssociate
+            // 
+            this.clmAssociate.Text = "Associate";
+            this.clmAssociate.Width = 80;
+            // 
+            // clmRelease
+            // 
+            this.clmRelease.Text = "Release";
+            this.clmRelease.Width = 80;
+            // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 488);
+            this.ClientSize = new System.Drawing.Size(783, 414);
             this.Controls.Add(this.lvFound);
             this.Name = "frmBrowse";
             this.Text = "frmBrowse";
@@ -98,8 +105,9 @@
         private System.Windows.Forms.ListView lvFound;
         private System.Windows.Forms.ColumnHeader clmLast;
         private System.Windows.Forms.ColumnHeader clmFirst;
-        private System.Windows.Forms.ColumnHeader clmAge;
         private System.Windows.Forms.ColumnHeader clmOrderID;
         private System.Windows.Forms.ColumnHeader clmDate;
+        private System.Windows.Forms.ColumnHeader clmAssociate;
+        private System.Windows.Forms.ColumnHeader clmRelease;
     }
 }
