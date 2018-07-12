@@ -29,6 +29,8 @@ namespace CopyrightFM
         /// <param name="e"></param>
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            lvLookup.Items.Clear();
+            
             DataAccess db = new DataAccess();
             people = db.GetPeople(txtLookup.Text);
 
@@ -36,8 +38,19 @@ namespace CopyrightFM
                 MessageBox.Show("No Data Exists for this information.");
             else
             {
-                lbFound.DataSource = people;
-                lbFound.DisplayMember = "FullInfo";
+                
+                foreach (Person p in people)
+                {
+                    ListViewItem item = new ListViewItem(p.FirstName);
+                    item.SubItems.Add(p.Lastname);
+                    item.SubItems.Add(p.OrderID.ToString());
+                    item.SubItems.Add(p.DateS);
+                    item.SubItems.Add(p.Initial);
+                    item.SubItems.Add(p.Release);
+                    item.SubItems.Add(p.PhoneNum.ToString());
+                    lvLookup.Items.Add(item);
+
+                }
             }
 
 

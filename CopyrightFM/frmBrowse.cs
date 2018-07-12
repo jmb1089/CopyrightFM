@@ -22,6 +22,7 @@ namespace CopyrightFM
 
         private void frmBrowse_Load(object sender, EventArgs e)
         {
+            lvFound.Items.Clear();
             DataAccess db = new DataAccess();
             people = db.AllApplicants();
 
@@ -35,9 +36,10 @@ namespace CopyrightFM
                 ListViewItem item = new ListViewItem(p.Lastname);
                 item.SubItems.Add(p.FirstName);
                 item.SubItems.Add(p.OrderID.ToString());
-                item.SubItems.Add(p.Date.ToString());
+                item.SubItems.Add(p.DateS);
                 item.SubItems.Add(p.Initial);
                 item.SubItems.Add(p.Release);
+                item.SubItems.Add(p.PhoneNum.ToString());
                 lvFound.Items.Add(item);
             }
         }

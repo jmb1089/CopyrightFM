@@ -31,7 +31,14 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtLookup = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.lbFound = new System.Windows.Forms.ListBox();
+            this.lvLookup = new System.Windows.Forms.ListView();
+            this.clmFirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmLastName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmOrderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmAssociate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmRelease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmPhoneNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnSearch
@@ -60,23 +67,63 @@
             this.lblLastName.TabIndex = 2;
             this.lblLastName.Text = "LastName";
             // 
-            // lbFound
+            // lvLookup
             // 
-            this.lbFound.BackColor = System.Drawing.SystemColors.Window;
-            this.lbFound.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.lbFound.FormattingEnabled = true;
-            this.lbFound.Location = new System.Drawing.Point(15, 101);
-            this.lbFound.Name = "lbFound";
-            this.lbFound.Size = new System.Drawing.Size(257, 121);
-            this.lbFound.TabIndex = 3;
+            this.lvLookup.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clmFirstName,
+            this.clmLastName,
+            this.clmOrderID,
+            this.clmDate,
+            this.clmAssociate,
+            this.clmRelease,
+            this.clmPhoneNum});
+            this.lvLookup.Location = new System.Drawing.Point(15, 105);
+            this.lvLookup.Name = "lvLookup";
+            this.lvLookup.Size = new System.Drawing.Size(602, 219);
+            this.lvLookup.TabIndex = 3;
+            this.lvLookup.UseCompatibleStateImageBehavior = false;
+            this.lvLookup.View = System.Windows.Forms.View.Details;
+            // 
+            // clmFirstName
+            // 
+            this.clmFirstName.Text = "First Name";
+            this.clmFirstName.Width = 73;
+            // 
+            // clmLastName
+            // 
+            this.clmLastName.Text = "Last Name";
+            this.clmLastName.Width = 79;
+            // 
+            // clmOrderID
+            // 
+            this.clmOrderID.Text = "Order ID";
+            this.clmOrderID.Width = 121;
+            // 
+            // clmDate
+            // 
+            this.clmDate.Text = "Date";
+            // 
+            // clmAssociate
+            // 
+            this.clmAssociate.Text = "Associate";
+            // 
+            // clmRelease
+            // 
+            this.clmRelease.Text = "Release";
+            this.clmRelease.Width = 90;
+            // 
+            // clmPhoneNum
+            // 
+            this.clmPhoneNum.Text = "Phone Number";
+            this.clmPhoneNum.Width = 114;
             // 
             // frmLookup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(293, 237);
-            this.Controls.Add(this.lbFound);
+            this.ClientSize = new System.Drawing.Size(643, 336);
+            this.Controls.Add(this.lvLookup);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtLookup);
             this.Controls.Add(this.btnSearch);
@@ -92,6 +139,13 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtLookup;
         private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.ListBox lbFound;
+        private System.Windows.Forms.ListView lvLookup;
+        private System.Windows.Forms.ColumnHeader clmFirstName;
+        private System.Windows.Forms.ColumnHeader clmLastName;
+        private System.Windows.Forms.ColumnHeader clmOrderID;
+        private System.Windows.Forms.ColumnHeader clmDate;
+        private System.Windows.Forms.ColumnHeader clmAssociate;
+        private System.Windows.Forms.ColumnHeader clmRelease;
+        private System.Windows.Forms.ColumnHeader clmPhoneNum;
     }
 }

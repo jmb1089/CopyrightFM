@@ -21,12 +21,12 @@ namespace CopyrightFM
             get;
         }
         
-        public int OrderID
+        public long OrderID
         {
             get;
         }
 
-        public int Date
+        public string DateS
         {
             get;
         }
@@ -42,6 +42,10 @@ namespace CopyrightFM
 
             get;
         }
+
+        public long PhoneNum
+        { get; }
+        
         public string FullInfo
         {
 

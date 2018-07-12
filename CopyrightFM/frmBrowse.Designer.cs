@@ -35,6 +35,7 @@
             this.clmDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmAssociate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmRelease = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmPhoneNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lvFound
@@ -46,13 +47,14 @@
             this.clmOrderID,
             this.clmDate,
             this.clmAssociate,
-            this.clmRelease});
+            this.clmRelease,
+            this.clmPhoneNum});
             this.lvFound.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvFound.FullRowSelect = true;
             this.lvFound.GridLines = true;
             this.lvFound.Location = new System.Drawing.Point(12, 28);
             this.lvFound.Name = "lvFound";
-            this.lvFound.Size = new System.Drawing.Size(696, 375);
+            this.lvFound.Size = new System.Drawing.Size(800, 375);
             this.lvFound.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.lvFound.TabIndex = 1;
             this.lvFound.UseCompatibleStateImageBehavior = false;
@@ -76,7 +78,7 @@
             // clmDate
             // 
             this.clmDate.Text = "Date";
-            this.clmDate.Width = 82;
+            this.clmDate.Width = 92;
             // 
             // clmAssociate
             // 
@@ -86,13 +88,18 @@
             // clmRelease
             // 
             this.clmRelease.Text = "Release";
-            this.clmRelease.Width = 80;
+            this.clmRelease.Width = 136;
+            // 
+            // clmPhoneNum
+            // 
+            this.clmPhoneNum.Text = "Phone Number";
+            this.clmPhoneNum.Width = 121;
             // 
             // frmBrowse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(783, 414);
+            this.ClientSize = new System.Drawing.Size(827, 414);
             this.Controls.Add(this.lvFound);
             this.Name = "frmBrowse";
             this.Text = "frmBrowse";
@@ -109,5 +116,6 @@
         private System.Windows.Forms.ColumnHeader clmDate;
         private System.Windows.Forms.ColumnHeader clmAssociate;
         private System.Windows.Forms.ColumnHeader clmRelease;
+        private System.Windows.Forms.ColumnHeader clmPhoneNum;
     }
 }
