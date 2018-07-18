@@ -14,37 +14,43 @@ namespace CopyrightFM
         public string FirstName
         {
             get;
+            set;
         }
 
         public string Lastname
         {
             get;
+            set;
         }
         
         public long OrderID
         {
             get;
+            set;
         }
 
         public string DateS
         {
             get;
+            set;
         }
 
         public string Initial
         {
 
             get;
+            set;
         }
 
         public string Release
         {
 
             get;
+            set;
         }
 
         public long PhoneNum
-        { get; }
+        { get; set; }
         
         public string FullInfo
         {

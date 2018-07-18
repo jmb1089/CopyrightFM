@@ -28,6 +28,18 @@ namespace CopyrightFM
             
         }
 
+        public void AddUser(string firstName, string lastName, string orderID, string date, string initial, string phoneNum)
+        {
+            
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CNN("CustomerApplicationDB")))
+            {
+                //Person newCustomer = new Person { FirstName = firstName, Lastname = lastName, OrderID = orderID, DateS = date, Initial = initial, PhoneNum = phoneNum };
+                List<Person> customer = new List<Person>();
+                customer.Add(new Person { FirstName = firstName, Lastname = lastName, OrderID = Int64.Parse(orderID), DateS = date, Initial = initial, PhoneNum = Int64.Parse(phoneNum) });
+                connection.Execute("dbo.People_Insert @FirstName, @LastName, @OrderID, @DateS, @Initial, @PhoneNum", customer);
+            }
+        }
+
 
 
         /// <summary>

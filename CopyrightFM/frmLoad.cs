@@ -40,5 +40,11 @@ namespace CopyrightFM
             frmBrowse browse = new frmBrowse();
             browse.Show();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Add add = new Add();
+            add.Show();
+        }
     }
 }
